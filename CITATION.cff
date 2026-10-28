@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use these artefacts, please cite both the short paper and this repository."
+title: "CreteXtract control layer: companion repository for the Prototypes for Humanity 2026 short paper"
+version: "1.0.0"
+date-released: "2026-10-28"
+license-url: "https://github.com/Majdi1994/cretextract-pfh2026#licences"
+repository-code: "https://github.com/Majdi1994/cretextract-pfh2026"
+url: "https://cretextract.com"
+authors:
+  - family-names: Flah
+    given-names: Majdi
+    orcid: "https://orcid.org/0000-0002-2838-278X"
+    affiliation: "Department of Civil Engineering, McMaster University"
+  - family-names: Nehdi
+    given-names: Moncef L.
+    orcid: "https://orcid.org/0000-0002-2561-993X"
+    affiliation: "College of Engineering, University of Guelph"
+keywords:
+  - chloride diffusion
+  - low-carbon concrete
+  - supplementary cementitious materials
+  - large language models
+  - data extraction
+  - NT BUILD 443
+preferred-citation:
+  type: conference-paper
+  title: "CreteXtract: From Literature to Auditable Chloride-Diffusion Evidence for Low-Carbon Concrete"
+  authors:
+    - family-names: Flah
+      given-names: Majdi
+    - family-names: Nehdi
+      given-names: Moncef L.
+  collection-title: "Prototypes for Humanity 2026, Short Papers Platform"
+  conference:
+    name: "Prototypes for Humanity 2026"
+    city: Dubai
+    country: AE
+    date-start: "2026-11-17"
+    date-end: "2026-11-20"
+  year: 2026

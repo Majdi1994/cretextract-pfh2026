@@ -1,0 +1,8 @@
+# study PDFs never go in the repository (publisher copyright)
+*.pdf
+# local run outputs, benchmark and scratch files
+runs/
+benchmark/
+*.tmp
+.DS_Store
+__pycache__/

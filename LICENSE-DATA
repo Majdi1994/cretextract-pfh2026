@@ -1,0 +1,16 @@
+The prompts, schema files, validation rules and manifests in this repository
+(everything under prompts/, schema/ and validation/) are licensed under the
+Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+Copyright (c) 2026 Majdi Flah and Moncef L. Nehdi
+
+You are free to share and adapt this material for any purpose, including
+commercially, provided you give appropriate credit, link to the licence and
+indicate whether changes were made.
+
+Full licence text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Suggested attribution:
+Flah, M. and Nehdi, M. L. (2026). CreteXtract control layer: companion
+repository for the Prototypes for Humanity 2026 short paper. Zenodo.
+<<< DOI >>>

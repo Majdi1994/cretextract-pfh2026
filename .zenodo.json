@@ -1,0 +1,16 @@
+{
+  "title": "CreteXtract control layer: companion repository for the Prototypes for Humanity 2026 short paper",
+  "upload_type": "software",
+  "description": "<p>Schema (16 columns), extraction prompt v1.4, validation prompt v1.4 and the executable validation rule set that constitute the control layer of CreteXtract, a web application that runs commercially available large language models inside a controlled extraction workflow to convert published chloride-diffusion evidence on concrete into traceable datasets. These are the artefacts of the configuration evaluated in the short paper <em>CreteXtract: From Literature to Auditable Chloride-Diffusion Evidence for Low-Carbon Concrete</em> (Flah and Nehdi, Prototypes for Humanity 2026, Dubai).</p>",
+  "creators": [
+    {"name": "Flah, Majdi", "affiliation": "McMaster University", "orcid": "0000-0002-2838-278X"},
+    {"name": "Nehdi, Moncef L.", "affiliation": "University of Guelph", "orcid": "0000-0002-2561-993X"}
+  ],
+  "keywords": ["chloride diffusion", "low-carbon concrete", "supplementary cementitious materials", "large language models", "data extraction", "NT BUILD 443", "service-life design"],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "related_identifiers": [
+    {"identifier": "https://cretextract.com", "relation": "isSupplementTo", "resource_type": "software"}
+  ],
+  "version": "1.0.0"
+}
