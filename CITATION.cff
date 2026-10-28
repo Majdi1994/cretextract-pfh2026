@@ -1,8 +1,16 @@
 cff-version: 1.2.0
 message: "If you use these artefacts, please cite both the short paper and this repository."
 title: "CreteXtract control layer: companion repository for the Prototypes for Humanity 2026 short paper"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-10-28"
+doi: "10.5281/zenodo.23749157"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23749157"
+    description: "Concept DOI for all versions"
+  - type: doi
+    value: "10.5281/zenodo.23749158"
+    description: "Version DOI for v1.0.0"
 license-url: "https://github.com/Majdi1994/cretextract-pfh2026#licences"
 repository-code: "https://github.com/Majdi1994/cretextract-pfh2026"
 url: "https://cretextract.com"

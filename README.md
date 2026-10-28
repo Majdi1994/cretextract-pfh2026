@@ -4,7 +4,7 @@ Companion artefacts for:
 
 > Flah, M. and Nehdi, M. L. (2026). *CreteXtract: From Literature to Auditable Chloride-Diffusion Evidence for Low-Carbon Concrete.* Short Papers Platform, Prototypes for Humanity 2026, Dubai, 17-20 November 2026.
 
-Archived version: `<<< Zenodo DOI, inserted on first release >>>`
+Archived at Zenodo: concept DOI [10.5281/zenodo.23749157](https://doi.org/10.5281/zenodo.23749157) (resolves to the latest version); first release v1.0.0, DOI [10.5281/zenodo.23749158](https://doi.org/10.5281/zenodo.23749158). Source: https://github.com/Majdi1994/cretextract-pfh2026
 
 ## What CreteXtract is
 
