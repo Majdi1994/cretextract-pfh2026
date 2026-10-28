@@ -1,0 +1,114 @@
+{
+  "name": "CreteXtract Chloride Da Validation",
+  "description": "Validation rules for the 12-study primary corpus for chloride diffusion coefficient (Da).",
+  "rules": [
+    {
+      "rule_id": "R_01",
+      "name": "Da Valid Range Warning",
+      "description": "Da > 30 x 10^-12 m2/s is outside the analysis range, flags for Analysis_Eligible = No.",
+      "scope": "row",
+      "severity": "warning",
+      "columns": [
+        "Da"
+      ],
+      "python_expression": "pd.to_numeric(df['Da'], errors='coerce') <= 30",
+      "enabled": true
+    },
+    {
+      "rule_id": "R_02",
+      "name": "Da Positivity",
+      "description": "Da must be a positive numeric value.",
+      "scope": "row",
+      "severity": "error",
+      "columns": [
+        "Da"
+      ],
+      "python_expression": "pd.to_numeric(df['Da'], errors='coerce') > 0",
+      "enabled": true
+    },
+    {
+      "rule_id": "R_03",
+      "name": "Exposure Duration Requirement",
+      "description": "Exposure_Duration must be extracted as a positive number of days. Exposure time, not total age.",
+      "scope": "row",
+      "severity": "error",
+      "columns": [
+        "Exposure_Duration"
+      ],
+      "python_expression": "pd.to_numeric(df['Exposure_Duration'], errors='coerce') > 0",
+      "enabled": true
+    },
+    {
+      "rule_id": "R_04",
+      "name": "Valid w_b_ratio",
+      "description": "Water-to-binder ratio should be within a reasonable concrete mixing range.",
+      "scope": "row",
+      "severity": "warning",
+      "columns": [
+        "w_b_ratio"
+      ],
+      "python_expression": "pd.to_numeric(df['w_b_ratio'], errors='coerce').between(0.1, 1.0)",
+      "enabled": true
+    },
+    {
+      "rule_id": "R_05",
+      "name": "Optional Compressive Strength",
+      "description": "CS is optional, but if present must be evaluated as missingness or a positive numeric value, not zero.",
+      "scope": "row",
+      "severity": "error",
+      "columns": [
+        "CS"
+      ],
+      "python_expression": "df['CS'].isna() | (pd.to_numeric(df['CS'], errors='coerce') > 0)",
+      "enabled": true
+    },
+    {
+      "rule_id": "R_06",
+      "name": "Test Method Presence",
+      "description": "Test_Method is a key matching field and cannot be empty.",
+      "scope": "row",
+      "severity": "error",
+      "columns": [
+        "Test_Method"
+      ],
+      "python_expression": "df['Test_Method'].notna() & (df['Test_Method'].astype(str) != '')",
+      "enabled": true
+    },
+    {
+      "rule_id": "R_07",
+      "name": "Cement Quantity Required",
+      "description": "Cement quantity must be greater than zero.",
+      "scope": "row",
+      "severity": "error",
+      "columns": [
+        "Cement"
+      ],
+      "python_expression": "pd.to_numeric(df['Cement'], errors='coerce') > 0",
+      "enabled": true
+    },
+    {
+      "rule_id": "R_08",
+      "name": "Exposure Temperature Validity",
+      "description": "Exposure_Temperature, if provided, should be a reasonable value in degrees Celsius.",
+      "scope": "row",
+      "severity": "error",
+      "columns": [
+        "Exposure_Temperature"
+      ],
+      "python_expression": "df['Exposure_Temperature'].isna() | (pd.to_numeric(df['Exposure_Temperature'], errors='coerce').between(-30, 100))",
+      "enabled": true
+    },
+    {
+      "rule_id": "R_09",
+      "name": "Reference Presence",
+      "description": "Reference (Study ID) must be populated for one-to-one matching.",
+      "scope": "row",
+      "severity": "error",
+      "columns": [
+        "Reference"
+      ],
+      "python_expression": "df['Reference'].notna() & (df['Reference'].astype(str) != '')",
+      "enabled": true
+    }
+  ]
+}
